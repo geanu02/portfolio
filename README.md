@@ -1,4 +1,16 @@
-# title(){return this.options.title||this.options.name}
+# Portfolio Website
+
+## Introduction
+
+Welcome to my portfolio page! I'm proud to present the projects that I've deployed and currently working on. As my skills in Frontend Web Development get honed by online tutorials, practicing by myself or with my mentor and simply reading about ways to improve and add features, I make sure to share the progress of my projects that you're able to view and observe both as a user and as a developer.
+
+I'd appreciate some feedback!
+
+
+Yours sincerely,
+
+Gian
+
 
 ## Supporting Scrimba
 
