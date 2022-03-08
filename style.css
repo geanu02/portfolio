@@ -126,7 +126,8 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--about,
+.section__subtitle-project {
     background: var(--clr-accent);
     padding: 0.25em 1em;
     font-family: var(--ff-secondary);
@@ -387,6 +388,10 @@ h3 { font-size: var(--fs-h3) }
         grid-area: img;
         position: relative;
         z-index: 1; }
+
+    .about-me__body {
+        grid-area: text;
+    }
 }
 
 /* My Work */
@@ -415,6 +420,7 @@ h3 { font-size: var(--fs-h3) }
         opacity 250ms linear;
 }
 
+
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
@@ -423,7 +429,7 @@ h3 { font-size: var(--fs-h3) }
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: 0.75;  
+    opacity: 0.75;
 }
 
 /* Footer */
@@ -480,4 +486,88 @@ h3 { font-size: var(--fs-h3) }
 
 .portfolio-item-individual p {
     max-width: 800px;
+}
+
+/* Projects Page */
+
+.section__project {
+/* .about-me */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section__project-img {
+    box-shadow: var(--bs);
+}
+
+.btn__project {
+    width: 100%;        
+    text-align: center;
+    transition: none;
+}
+
+.btn__project:hover {
+    transform: none;
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .section__project {
+    /* .about-me { */
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .section__title-project {
+         grid-area: title 
+    }
+
+    .section__subtitle-project { 
+        /* grid-area: subtitle */
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+    .section__project-img { 
+        grid-area: img;
+        position: relative;
+        z-index: 1; }
+
+    .section__project-body {
+        grid-area: text;
+    }
+
+    .btn__project {
+        width: auto;
+        transition: transform 200ms ease-in-out;
+    }
+
+    .btn__project:hover {
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+
+}
+
+/* Project Alternate Section */
+
+.section__project__alt-bg {
+    background-color: var(--clr-dark);
+}
+
+.section__project__alt {
+    color: var(--clr-light);
+}
+
+.section__subtitle-project__alt {
+    color: var(--clr-dark);
 }

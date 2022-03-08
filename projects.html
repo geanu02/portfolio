@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gian Carlo Torres - My Work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/geanu.png" alt="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Header -->
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Gian Torres</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
+        <img src="img/dev-gian-02.jpg" alt="a photo of gian" class="intro__img">
+    </section>
+
+    <!-- Projects Body -->
+
+    <!-- Netflix Clone -->
+    <div class="section__project__alt-bg">
+        <section class="section__project section__project__alt" id="netflix">
+            <h2 class="section__title section__title-project">Streaming Services Web Application</h2>
+            <p class="section__subtitle section__subtitle-project section__subtitle-project__alt">My Version of Netflix
+            </p>
+            <div>
+                <p>Built the frontend UI of Netflix utilizing React, StyledComponents and Firebase Auth that enable user
+                    authentication, search film and series titles and play media. Applied modern web standards in
+                    Responsive
+                    Design in developing a Single-Page Application (SPA) using JavaScript ES6+ and React.js functional
+                    compound
+                    components, router and built-in/custom hooks. Deployed web application in Netlify through Github to
+                    enable
+                    CI/CD.
+                </p>
+                <p>
+                    <a href="http://geanu-netflix.netlify.app" alt="Application Link" class="btn btn__project">
+                        Web Application Link
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.github.com/geanu02/Netflix_Clone" alt="Source Code Link"
+                        class="btn btn__project">
+                        Source Code Link
+                    </a>
+                </p>
+            </div>
+            <img src="img/proj_netflix.jpg" class="section__project-img" alt="Netflix Clone screenshot">
+        </section>
+    </div>
+    <!-- Birds Eye View -->
+
+    <section class="section__project" id="photostore">
+        <h2 class="section__title section__title-project">Photo Store Web Application</h2>
+        <p class="section__subtitle section__subtitle-project">Bird's Eye View: My Photo Collection & Store</p>
+        <div>
+            <p>Built the frontend prototype of a photo gallery utilizing React, StyledComponents and Heroku functions
+                that
+                showcase photos, enabling favorites and carts, and online ordering. Deployed custom API using Heroku
+                functions to share my personal collection of stunning photos from hikes and memorable walks. Applied
+                Responsive Design practices, React custom hooks and router, and deployed the web application on Netlify
+                through Github to enable CI/CD.
+            </p>
+            <p>
+                <a href="http://geanu-birdseyeview.netlify.app" alt="Application Link" class="btn btn__project">
+                    Web Application Link
+                </a>
+            </p>
+            <p>
+                <a href="https://www.github.com/geanu02/BirdsEyeView" alt="Source Code Link" class="btn btn__project">
+                    Source Code Link
+                </a>
+            </p>
+        </div>
+        <img src="img/proj_birdseyeview.png" class="section__project-img" alt="Netflix Clone screenshot">
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <a href="mailto:geanu@outlook.com" class="footer__link">geanu@outlook.com</a>
+        <ul class="social-list">
+            <li class="social_list__item">
+                <a href="http://www.linkedin.com/in/geanu" class="social-list__link" target="_blank" alt="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social_list__item">
+                <a href="https://github.com/geanu02" class="social-list__link" target="_blank" alt="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social_list__item">
+                <a href="https://www.frontendmentor.io/profile/geanu02" class="social-list__link" target="_blank"
+                    alt="Frontend Mentor">
+                    <i class="fab fa-galactic-senate"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
