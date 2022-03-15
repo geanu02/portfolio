@@ -571,3 +571,67 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle-project__alt {
     color: var(--clr-dark);
 }
+
+.tech-used-container { 
+    padding: 1.5em 0; 
+
+}
+
+.tech-used-title {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.tech-used-title::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-light);
+    opacity: 0.25;
+}
+
+.tech-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    padding: 3px;
+    font-size: 30px;
+}
+
+@media (min-width: 600px) {
+    .tech-used-container {
+        margin-bottom: 1.5em;
+    }
+
+    .tech-used-title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .tech-used-title::after {
+        display: none;
+    }
+
+    .tech-used {
+        margin-top: 0.25em;
+        justify-content: flex-start;
+    }
+
+    .icon:first-child {
+        padding-left: 0;
+    }
+}
+
+.icon-clr-reverse {
+    color: var(--clr-dark);
+}
