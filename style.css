@@ -586,7 +586,7 @@ h3 { font-size: var(--fs-h3) }
     font-weight: 700;
 }
 
-.tech-used-title::after {
+.title-after::after {
     content: '';
     display: block;
     width: 5em;
@@ -594,6 +594,10 @@ h3 { font-size: var(--fs-h3) }
     margin: 0.5em auto 1em;
     background-color: var(--clr-light);
     opacity: 0.25;
+}
+
+.title-after-reverse::after {
+    background-color: var(--clr-dark);
 }
 
 .tech-used {
