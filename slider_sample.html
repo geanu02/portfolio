@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Link to Source -->
+<!-- https://www.codeguage.com/tutorials/sliders/examples/auto -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Autoplay Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <style>
+        #example-logo {
+            display: block;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 10;
+            width: 120px;
+            padding: 15px 20px;
+            font-family: sans-serif;
+            font-size: 11px;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #example-logo img {
+            width: 100%
+        }
+    </style>
+    <style>
+        .slider-cont {
+            position: relative;
+            width: 400px;
+        }
+
+        .slider {
+            position: relative;
+            height: 250px;
+        }
+
+        .slides {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+            color: white;
+            font-size: 30px;
+            text-align: center
+        }
+
+        .slides:first-child {
+            display: block
+        }
+
+        .slider-nav {
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .pagination span {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            margin: 5px;
+            background-color: #ddd;
+            border-radius: 25px;
+        }
+
+        .pagination span.sel {
+            background-color: black
+        }
+
+        @keyframes fill {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="example-logo" href="/" target="_top">powered by<img src="/Images/logo-grey.svg" alt="Logo"></a>
+    <p>Keep navigating the slider for somewhere close to 5s, and notice no navigation being made, uptil the point you
+        stop the interaction, and then wait for <b>another 5s</b>.</p>
+    <p><em>No unexpected navigations will happen this time!</em></p>
+    <div class="slider-cont">
+        <div class="slider">
+            <div class="slides-wrapper">
+                <div class="slides">Slide 1</div>
+                <div class="slides">Slide 2</div>
+                <div class="slides">Slide 3</div>
+            </div>
+        </div>
+        <div class="pagination"></div>
+        <button class="slider-nav">&lt; Back</button>
+        <button class="slider-nav">Forward &gt;</button>
+    </div>
+
+    <script>
+        var counter = 0;
+        var prevCounter = 0; // keep track of prev slide
+        var slides = document.getElementsByClassName("slides");
+        var buttons = document.getElementsByClassName("slider-nav");
+        var len = slides.length; // number of slides
+
+        var Automation = {
+            id: null,
+            start: function () {
+                this.id = setInterval(function () {
+                    counter++;
+                    navigateSlider();
+                }, time);
+            },
+            reset: function () {
+                clearInterval(this.id);
+                this.start();
+            }
+        }
+
+        function navigateSlider() {
+            if (counter == len) counter = 0;
+            else if (counter < 0) counter = len - 1;
+
+            if (automate) {
+                Automation.reset();
+            }
+            slides[counter].style.display = "block";
+            slides[prevCounter].style.display = "none";
+            paginationButtons[prevCounter].classList.remove("sel");
+            paginationButtons[counter].classList.add("sel");
+            prevCounter = counter;
+        }
+
+        buttons[0].onclick = function () {
+            // else decrement by 1
+            counter--;
+            navigateSlider();
+        };
+        buttons[1].onclick = function () {
+            counter++;
+            navigateSlider();
+        }
+
+        var pagination = document.getElementsByClassName("pagination")[0];
+        if (pagination) {
+            var paginationButtons = pagination.getElementsByTagName("span")
+            for (var i = 0; i < len; i++) {
+                var ele = document.createElement("span");
+                ele.onclick = (function (i) {
+                    return function () {
+                        counter = i;
+                        navigateSlider();
+                    }
+                })(i)
+                if (i === 0) { ele.className = "sel"; }
+                pagination.appendChild(ele);
+            }
+        }
+
+        var time = 5000;
+        var automate = true;
+
+        if (automate) {
+            Automation.start();
+        }
+    </script>
+
+</body>
+
+</html>

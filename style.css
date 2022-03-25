@@ -420,7 +420,6 @@ h3 { font-size: var(--fs-h3) }
         opacity 250ms linear;
 }
 
-
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
@@ -431,6 +430,147 @@ h3 { font-size: var(--fs-h3) }
     transform: scale(1.2);
     opacity: 0.75;
 }
+
+/* Achievements */
+
+.my-achievements {
+    background-image: url(img/achieve-bg.jpg);
+    background-color: gray;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.achievements__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievements__title {
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.achievements__body {
+    min-width: 100%;
+    margin: 0;
+}
+
+.ach__body-boxes {
+    max-width: 600px;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    padding: 2em;
+    margin: 2em auto 0;
+    opacity: 1;
+    color: var(--clr-dark);
+}
+
+.ach__body-certs {
+    margin-top: 0;
+}
+
+.ach__title {
+    font-size: 1.6rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+.ach__title::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-dark);
+    opacity: 0.25;
+}
+
+.ach__cert,
+.ach__teach,
+.ach__award {
+    background-color: var(--clr-dark);
+    border-radius: 0.4rem;
+    color: var(--clr-light);
+    padding: 0.8em 1em;
+    margin-top: 1em;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.ach__cert-title,
+.ach__teach-title,
+.ach__award-title {
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: var(--fs-body);
+    letter-spacing: -1px;
+    line-height: 1rem;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+.ach__cert-subtitle,
+.ach__teach-subtitle,
+.ach__award-subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.ach__cert:hover,
+.ach__teach:hover,
+.ach__award:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+}
+
+@media (min-width: 1143px) {
+    .achievements__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    .achievements__title {
+        padding: 0;
+    }
+
+    .achievements__body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ach__body-certs { 
+        order: 2;
+        max-width: 38%;
+        margin: 0 0.15em;
+    }
+
+    .ach__body-teach {
+        order: 1;
+        max-width: 31%;
+    }
+
+    .ach__body-award {
+        order: 3;
+        max-width: 31%;
+    }
+
+    /* .ach__body-boxes {
+        min-width: 300px;
+    } */
+
+}
+
+
 
 /* Footer */
 
@@ -524,11 +664,11 @@ h3 { font-size: var(--fs-h3) }
     }
 
     .section__title-project {
-         grid-area: title 
+         grid-area: title;
     }
 
     .section__subtitle-project { 
-        /* grid-area: subtitle */
+        grid-area: subtitle;
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
@@ -618,10 +758,22 @@ h3 { font-size: var(--fs-h3) }
     cursor: default;
 }
 
+.tech-button:hover {
+    background-color: var(--clr-dark);
+    border-color: var(--clr-light);
+    color: var(--clr-light);
+}
+
 .btn-rev {
     background-color: var(--clr-dark);
     border-color: var(--clr-light);
     color: var(--clr-light);
+}
+
+.btn-rev:hover {
+    background-color: var(--clr-light);
+    border-color: var(--clr-dark);
+    color: var(--clr-dark);
 }
 
 .icon {
@@ -632,6 +784,8 @@ h3 { font-size: var(--fs-h3) }
     vertical-align: middle;
     margin-left: 0.5em;
 }
+
+
 
 @media (min-width: 600px) {
     .tech-used-container {
@@ -656,16 +810,21 @@ h3 { font-size: var(--fs-h3) }
         padding: 6px 20px;
     } */
 
+}
+
+
+@media (hover: none) {
+    .ach__cert:hover,
+    .ach__teach:hover,
+    .ach__award:hover {
+        cursor: pointer;
+    }
+
     .tech-button:hover {
-        background-color: var(--clr-dark);
-        border-color: var(--clr-light);
-        color: var(--clr-light);
+        cursor: pointer;
     }
 
     .btn-rev:hover {
-        background-color: var(--clr-light);
-        border-color: var(--clr-dark);
-        color: var(--clr-dark);
+        cursor: pointer;
     }
-
 }
