@@ -814,17 +814,17 @@ h3 { font-size: var(--fs-h3) }
 
 
 @media (hover: none) {
-    .ach__cert:hover,
-    .ach__teach:hover,
-    .ach__award:hover {
+    .ach__cert:not(.nohover):hover,
+    .ach__teach:not(.nohover):hover,
+    .ach__award:not(.nohover):hover {
         cursor: pointer;
     }
 
-    .tech-button:hover {
+    .tech-button:not(.nohover):hover {
         cursor: pointer;
     }
 
-    .btn-rev:hover {
+    .btn-rev:not(.nohover):hover {
         cursor: pointer;
     }
 }
