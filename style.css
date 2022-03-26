@@ -521,21 +521,6 @@ h3 { font-size: var(--fs-h3) }
     line-height: 1rem;
 }
 
-.ach__cert:hover,
-.ach__teach:hover,
-.ach__award:hover {
-    background-color: var(--clr-accent);
-    color: var(--clr-dark);
-}
-
-@media (hover: none) {
-    .ach__cert:not(.nohover):hover,
-    .ach__teach:not(.nohover):hover,
-    .ach__award:not(.nohover):hover {
-        background-color: var(--clr-accent);
-        color: var(--clr-dark);
-    }
-}
 
 @media (min-width: 1143px) {
     .achievements__container {
@@ -571,6 +556,13 @@ h3 { font-size: var(--fs-h3) }
     .ach__body-award {
         order: 3;
         max-width: 31%;
+    }
+
+    .ach__cert:hover,
+    .ach__teach:hover,
+    .ach__award:hover {
+        background-color: var(--clr-accent);
+        color: var(--clr-dark);
     }
 
     /* .ach__body-boxes {
@@ -705,6 +697,13 @@ h3 { font-size: var(--fs-h3) }
         text-decoration: none;
     }
 
+    .ach__cert:hover,
+    .ach__teach:hover,
+    .ach__award:hover {
+        background-color: var(--clr-accent);
+        color: var(--clr-dark);
+    }
+
 }
 
 /* Project Alternate Section */
@@ -794,8 +793,6 @@ h3 { font-size: var(--fs-h3) }
     margin-left: 0.5em;
 }
 
-
-
 @media (min-width: 600px) {
     .tech-used-container {
         margin-bottom: 1.5em;
@@ -819,4 +816,13 @@ h3 { font-size: var(--fs-h3) }
         padding: 6px 20px;
     } */
 
+}
+
+@media (cursor: coarse) {
+    .ach__cert:not(.nohover):hover,
+    .ach__teach:not(.nohover):hover,
+    .ach__award:not(.nohover):hover {
+        background-color: var(--clr-accent);
+        color: var(--clr-dark);
+    }
 }
