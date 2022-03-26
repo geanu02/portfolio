@@ -818,7 +818,7 @@ h3 { font-size: var(--fs-h3) }
 
 }
 
-@media (cursor: coarse) {
+@media (pointer: coarse) {
     .ach__cert:not(.nohover):hover,
     .ach__teach:not(.nohover):hover,
     .ach__award:not(.nohover):hover {
