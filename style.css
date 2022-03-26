@@ -496,7 +496,7 @@ h3 { font-size: var(--fs-h3) }
     padding: 0.8em 1em;
     margin-top: 1em;
     transition: 0.5s;
-    cursor: default;
+    cursor: pointer;
 }
 
 .ach__cert-title,
@@ -526,6 +526,15 @@ h3 { font-size: var(--fs-h3) }
 .ach__award:hover {
     background-color: var(--clr-accent);
     color: var(--clr-dark);
+}
+
+@media (hover: none) {
+    .ach__cert:not(.nohover):hover,
+    .ach__teach:not(.nohover):hover,
+    .ach__award:not(.nohover):hover {
+        background-color: var(--clr-accent);
+        color: var(--clr-dark);
+    }
 }
 
 @media (min-width: 1143px) {
@@ -810,21 +819,4 @@ h3 { font-size: var(--fs-h3) }
         padding: 6px 20px;
     } */
 
-}
-
-
-@media (hover: none) {
-    .ach__cert:not(.nohover):hover,
-    .ach__teach:not(.nohover):hover,
-    .ach__award:not(.nohover):hover {
-        cursor: pointer;
-    }
-
-    .tech-button:not(.nohover):hover {
-        cursor: pointer;
-    }
-
-    .btn-rev:not(.nohover):hover {
-        cursor: pointer;
-    }
 }
