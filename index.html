@@ -1,204 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Gian Carlo Torres</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-        rel="stylesheet">
-</head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation -->
     <header class="header">
-        <div class="logo">
-            <img src="img/geanu.png" alt="logo">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                2
-                </li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="img/geanu.png" alt="logo" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="./docs/resume_gct2023.pdf" class="nav__link"
+              >Download My Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Introduction Header -->
 
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Gian Torres</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
-        <img src="img/dev-gian-02.jpg" alt="a photo of gian" class="intro__img">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Gian Torres</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Frontend Developer
+      </p>
+      <img src="img/dev-gian-02.jpg" alt="a photo of gian" class="intro__img" />
     </section>
 
     <!-- My Services -->
 
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Responsive Design</h3>
-                <p>Best practices in Frontend Development include a deep understanding in responsive design. I make sure
-                    that my web applications fit perfectly in any form of device and viewport.</p>
-            </div>
-            <div class="service">
-                <h3>React.js</h3>
-                <p>React provides a frontend web architecture that is easy to build and maintain. Using custom hooks and
-                    component reusability that maintain context and state allow the application to deploy its maximum
-                    potential.</p>
-            </div>
-            <div class="service">
-                <h3>Integration</h3>
-                <p>I look for ways to improve performance, enable flexibility and add features to my web applications.
-                    Integrating with AWS, Netlify, Heroku and Firebase are just some of the services I've used that
-                    brought these projects to life.</p>
-            </div>
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Frontend Specialty</h3>
+          <p>
+            React provides a frontend web architecture that is easy to build and
+            maintain while TypeScript extends JS and enables developers to avoid errors
+            and do rewrites with ease. I'm proud to have acquired such powerhouse of a tech stack. 
+          </p>
         </div>
-        <a href="#work" class="btn">My Work</a>
+        <div class="service">
+          <h3>API Integration</h3>
+          <p>
+            Understanding the JSON format fetched from any source is a sought skill. 
+            From dictionaries to objects to Marshmallow to Insomnia, my experience with 
+            API responses and error handling is a great asset I hold with pride.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Backend Experience</h3>
+          <p>
+            I have deep understanding in how backend works, as I have built flask
+            applications with Python and SQLAlchemy before. This knowledge enables
+            me to work closely and understand backend engineers.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn">My Work</a>
     </section>
 
     <!-- About Me -->
 
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Web Developer based out of NYC</p>
-        <div class="about-me__body">
-            <p>I choose to be a web developer simply because I love seeing my imagination come to life. When I was 15, I
-                started building simple websites in geocities and tinkering CSS in multiply. I loved looking at
-                beautiful
-                websites and imagine how I can recreate it as my inspired version.</p>
-            <p>After eight years of working as a computer systems analyst in Silicon Valley and a year of learning
-                data science, AWS architecture and mobile development, I've come to realize that frontend web
-                development is still my passion. I've recently upgraded my JS, HTML & CSS development skills
-                with
-                Scrimba, learned React, custom hooks and reusable & styled components. I'm excited to create more React
-                projects
-                and start a software development career with it.</p>
-        </div>
-        <img src="img/dev-gian-01.jpg" alt="another photo of gian" class="about-me__img">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Web Developer based in NYC
+      </p>
+      <div class="about-me__body">
+        <p>
+          I choose to be a web developer simply because I love seeing my
+          imagination come to life. When I was 15, I started building static
+          websites in geocities and tinkering CSS in multiply. I loved looking
+          at beautiful websites and imagine how I can recreate it as my inspired
+          version.
+        </p>
+        <p>
+          After eight years of working as a computer systems analyst in Silicon
+          Valley and a year of learning data science, AWS architecture and
+          mobile development, I've decided to finally pursue my passion in frontend web development. 
+          I've recently finished an intense 10-week Full-Stack Engineering bootcamp with
+          Coding Temple that amplified my frontend knowledge in React, TypeScript, Tailwind and 
+          modern web stacks including Flask + Python, SQLAlchemy + Postgres and RESTful APIs.
+          I'm excited to build more projects and start a frontend developer career with it.
+        </p>
+      </div>
+      <img
+        src="img/dev-gian-01.jpg"
+        alt="another photo of gian"
+        class="about-me__img"
+      />
     </section>
 
     <!-- My Work -->
 
     <section class="my-work" id="work">
-        <h2 class="section__title">My work</h2>
-        <p class="section__subtitle">A selection of my range of work</p>
-        <div class="portfolio">
-            <a href="projects.html#netflix" class="portfolio__item">
-                <img src="img/work-netflix.png" alt="Netflix Clone" class="portfolio__img">
-            </a>
-            <a href="projects.html#photostore" class="portfolio__item">
-                <img src="img/work-birdseyeview.png" alt="Bird's Eye View" class="portfolio__img">
-            </a>
-            <a href="projects.html#moviesearch" class="portfolio__item">
-                <img src="img/work-moviesearch.png" alt="Movie Search" class="portfolio__img">
-            </a>
-        </div>
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle">A showcase of my Skillset</p>
+      <div class="portfolio">
+        <a href="projects.html#brekky" class="portfolio__item">
+          <img
+            src="./img/proj-brekky.png"
+            alt="Brekky"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="projects.html#weather" class="portfolio__item">
+          <img
+            src="./img/proj-weather.png"
+            alt="Weather or Not"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="projects.html#netflix" class="portfolio__item">
+          <img
+            src="img/work-netflix.png"
+            alt="Netflix Clone"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
     </section>
 
     <!-- My Achievements -->
 
     <section class="my-achievements" id="achievement">
-        <div class="achievements__container">
-            <div class="achievements__title">
-                <h2 class="section__title">Achievements</h2>
-                <p class="section__subtitle">Certifications and awards I am most proud of</p>
-            </div>
-            <div class="achievements__body">
-                <div class="ach__body-boxes ach__body-certs">
-                    <h3 class="ach__title title_certs">Certification</h3>
-                    <a href="https://scrimba.com/certificate/uWvGeGfL/gfrontend" class="ach__link" target="_blank"
-                        alt="Scrimba Frontend Developer Career Path">
-                        <div class="ach__cert">
-                            <h4 class="ach__cert-title">Frontend Web Development</h4>
-                            <p class="ach__cert-subtitle">Scrimba, 2021</p>
-                        </div>
-                    </a>
-                    <a href="https://www.credly.com/badges/251997af-b134-46c2-96cf-5cbf55821727" class="ach__link"
-                        target="_blank" alt="AWS Solutions Architect Associate">
-                        <div class="ach__cert">
-                            <h4 class="ach__cert-title">Solutions Architect Associate</h4>
-                            <p class="ach__cert-subtitle">Amazon Web Services, 2021</p>
-                        </div>
-                    </a>
-                    <a href="docs/certificate_react_native_pdf.pdf" class="ach__link" target="_blank"
-                        alt="ZTM Academy React Native Development">
-                        <div class="ach__cert">
-                            <h4 class="ach__cert-title">React Native Development</h4>
-                            <p class="ach__cert-subtitle">Zero To Mastery Academy, 2021</p>
-                        </div>
-                    </a>
-                    <a href="https://app.dataquest.io/view_cert/NI8552DZL0GIEHNN5E3E/" class="ach__link" target="_blank"
-                        alt="Dataquest Data Engineer">
-                        <div class="ach__cert">
-                            <h4 class="ach__cert-title">Data Engineer</h4>
-                            <p class="ach__cert-subtitle">Dataquest, 2020</p>
-                        </div>
-                    </a>
-                    <a href="https://app.dataquest.io/view_cert/JJTBUAXQR6S9KNNCFVSX/" class="ach__link" target="_blank"
-                        alt="Dataquest Data Analyst in Python">
-                        <div class="ach__cert">
-                            <h4 class="ach__cert-title">Data Analyst in Python</h4>
-                            <p class="ach__cert-subtitle">Dataquest, 2020</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="ach__body-boxes ach__body-teach">
-                    <h3 class="ach__title title_teach">Teaching Experience</h3>
-                    <div class="ach__teach">
-                        <h4 class="ach__teach-title">.NET Fundamentals Training</h4>
-                        <p class="ach__teach-subtitle">Universiti Malaysia Terengganu, 2011</p>
-                    </div>
-                </div>
-                <div class="ach__body-boxes ach__body-award">
-                    <h3 class="ach__title title_award">Awards</h3>
-                    <div class="ach__award">
-                        <h4 class="ach__award-title">Finalist, Software Design</h4>
-                        <p class="ach__award-subtitle">Microsoft Imagine Cup, Philippines, 2010</p>
-                    </div>
-                </div>
-            </div>
+      <div class="achievements__container">
+        <div class="achievements__title">
+          <h2 class="section__title">My achievements</h2>
+          <p class="section__subtitle">
+            Certifications and awards I am most proud of
+          </p>
         </div>
+        <div class="achievements__body">
+          <div class="ach__body-boxes ach__body-certs">
+            <h3 class="ach__title title_certs">Certification</h3>
+            <a
+                href="#"
+                class="ach__link"
+                target="_blank"
+                alt="Coding Temple"
+            >
+                <div class="ach__cert">
+                <h4 class="ach__cert-title">Full Stack Development</h4>
+                <p class="ach__cert-subtitle">Coding Temple, 2023</p>
+                </div>
+            </a>
+            <a
+              href="https://scrimba.com/certificate/uWvGeGfL/gfrontend"
+              class="ach__link"
+              target="_blank"
+              alt="Scrimba Frontend Developer Career Path"
+            >
+              <div class="ach__cert">
+                <h4 class="ach__cert-title">Frontend Web Development</h4>
+                <p class="ach__cert-subtitle">Scrimba, 2021</p>
+              </div>
+            </a>
+            <a
+              href="https://www.credly.com/badges/251997af-b134-46c2-96cf-5cbf55821727"
+              class="ach__link"
+              target="_blank"
+              alt="AWS Solutions Architect Associate"
+            >
+              <div class="ach__cert">
+                <h4 class="ach__cert-title">Solutions Architect Associate</h4>
+                <p class="ach__cert-subtitle">Amazon Web Services, 2021</p>
+              </div>
+            </a>
+            <a
+              href="docs/certificate_react_native_pdf.pdf"
+              class="ach__link"
+              target="_blank"
+              alt="ZTM Academy React Native Development"
+            >
+              <div class="ach__cert">
+                <h4 class="ach__cert-title">React Native Development</h4>
+                <p class="ach__cert-subtitle">Zero To Mastery Academy, 2021</p>
+              </div>
+            </a>
+            <a
+              href="https://app.dataquest.io/view_cert/NI8552DZL0GIEHNN5E3E/"
+              class="ach__link"
+              target="_blank"
+              alt="Dataquest Data Engineer"
+            >
+              <div class="ach__cert">
+                <h4 class="ach__cert-title">Data Engineer</h4>
+                <p class="ach__cert-subtitle">Dataquest, 2020</p>
+              </div>
+            </a>
+            <a
+              href="https://app.dataquest.io/view_cert/JJTBUAXQR6S9KNNCFVSX/"
+              class="ach__link"
+              target="_blank"
+              alt="Dataquest Data Analyst in Python"
+            >
+              <div class="ach__cert">
+                <h4 class="ach__cert-title">Data Analyst in Python</h4>
+                <p class="ach__cert-subtitle">Dataquest, 2020</p>
+              </div>
+            </a>
+          </div>
+          <div class="ach__body-boxes ach__body-teach">
+            <h3 class="ach__title title_teach">Teaching Experience</h3>
+            <div class="ach__teach">
+              <h4 class="ach__teach-title">.NET Fundamentals Training</h4>
+              <p class="ach__teach-subtitle">
+                Universiti Malaysia Terengganu, 2011
+              </p>
+            </div>
+          </div>
+          <div class="ach__body-boxes ach__body-award">
+            <h3 class="ach__title title_award">Awards</h3>
+            <div class="ach__award">
+              <h4 class="ach__award-title">Finalist, Software Design</h4>
+              <p class="ach__award-subtitle">
+                Microsoft Imagine Cup, Philippines, 2010
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
 
     <footer class="footer">
-        <a href="mailto:geanu@outlook.com" class="footer__link">geanu@outlook.com</a>
-        <ul class="social-list">
-            <li class="social_list__item">
-                <a href="http://www.linkedin.com/in/geanu" class="social-list__link" target="_blank" alt="Linkedin">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social_list__item">
-                <a href="https://github.com/geanu02" class="social-list__link" target="_blank" alt="Github">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social_list__item">
-                <a href="https://www.frontendmentor.io/profile/geanu02" class="social-list__link" target="_blank"
-                    alt="Frontend Mentor">
-                    <i class="fab fa-galactic-senate"></i>
-                </a>
-            </li>
-        </ul>
+      <a href="mailto:geanu@outlook.com" class="footer__link"
+        >geanu@outlook.com</a
+      >
+      <ul class="social-list">
+        <li class="social_list__item">
+          <a
+            href="http://www.linkedin.com/in/geanu"
+            class="social-list__link"
+            target="_blank"
+            alt="Linkedin"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social_list__item">
+          <a
+            href="https://github.com/geanu02"
+            class="social-list__link"
+            target="_blank"
+            alt="Github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
