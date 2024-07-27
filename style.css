@@ -422,7 +422,7 @@ h3 {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -738,17 +738,16 @@ h3 {
     background-color: var(--clr-dark);
 }
 
-.section__project__alt {
+.section__project__alt-bg .section__project {
     color: var(--clr-light);
 }
 
-.section__subtitle-project__alt {
+.section__project__alt-bg .section__subtitle-project {
     color: var(--clr-dark);
 }
 
 .tech-used-container {
     padding: 1.5em 0;
-
 }
 
 .tech-used-title {
@@ -782,10 +781,10 @@ h3 {
 }
 
 .tech-button {
-    background-color: var(--clr-light);
-    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-light);
     border-radius: 0.75em;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     padding: 6px 20px 8px;
     margin: 5px;
     transition: 0.5s;
@@ -793,21 +792,21 @@ h3 {
 }
 
 .tech-button:hover {
-    background-color: var(--clr-dark);
-    border-color: var(--clr-light);
-    color: var(--clr-light);
-}
-
-.btn-rev {
-    background-color: var(--clr-dark);
-    border-color: var(--clr-light);
-    color: var(--clr-light);
-}
-
-.btn-rev:hover {
     background-color: var(--clr-light);
     border-color: var(--clr-dark);
     color: var(--clr-dark);
+}
+
+.section__project__alt-bg .tech-button {
+    background-color: var(--clr-light);
+    border-color: var(--clr-dark);
+    color: var(--clr-dark);
+}
+
+.section__project__alt-bg .tech-button:hover {
+    background-color: var(--clr-dark);
+    border-color: var(--clr-light);
+    color: var(--clr-light);
 }
 
 .icon {
@@ -847,20 +846,22 @@ h3 {
 .project-text-link:link,
 .project-text-link:active,
 .project-text-link:visited {
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-decoration: none;
 }
 
 .project-text-link:hover {
     text-decoration: underline;
 }
-.project-text-link_alt:link,
-.project-text-link_alt:active,
-.project-text-link_alt:visited {
-    color: var(--clr-dark);
+
+/* Alt Project Link: "Credits to" */
+.section__project__alt-bg .project-text-link:link,
+.section__project__alt-bg .project-text-link:active,
+.section__project__alt-bg .project-text-link:visited {
+    color: var(--clr-light);
     text-decoration: none;
 }
 
-.project-text-link_alt:hover {
+.section__project__alt-bg  .project-text-link:hover {
     text-decoration: underline;
 }
